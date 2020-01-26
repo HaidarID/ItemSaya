@@ -7,31 +7,30 @@ import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Itemsaya extends JavaPlugin {
-	
+
 	private static Itemsaya Instance;
 	private ItemManager ItemManager;
 
-	
+
 	@Override
 	public void onEnable() {
 		try {
-      Instance = this;
-      ItemManager = new ItemManager();
-      ItemManager.registerItems();
-      Bukkit.getPluginManager().registerEvents(new SpellReader(), this);
-      getCommand("itemsaya").setExecutor(new Cmd());
-      getConfig().options().copyDefaults();
-  		saveDefaultConfig();
+			Instance = this;
+			ItemManager = new ItemManager();
+			ItemManager.registerItems();
+			Bukkit.getPluginManager().registerEvents(new SpellReader(), this);
+			getCommand("itemsaya").setExecutor(new Cmd());
+			getConfig().options().copyDefaults();
+			saveDefaultConfig();
 		} catch (Exception exc) {
-			// TODO: handle exception
+
 		}
 	}
-	
+
 	@Override
 	public void onDisable() {
 	}
-	
-	// getter class
+
 	public static Itemsaya getInstance() {
 		return Instance;
 	}
