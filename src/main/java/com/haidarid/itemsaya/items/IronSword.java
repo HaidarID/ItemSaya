@@ -24,8 +24,9 @@ public final class IronSword extends Item {
 
 	@Override
 	public List<String> setLore() {
-		
-		return null;
+		Arraylist<String> lore = new Arraylist<>();
+		lore.add("This is lore line 1")
+		return lore;
 	}
 
 }
