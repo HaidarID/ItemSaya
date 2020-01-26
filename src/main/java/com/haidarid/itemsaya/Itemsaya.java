@@ -14,7 +14,7 @@ public class Itemsaya extends JavaPlugin {
 
 	@Override
 	public void onEnable() {
-		try {
+	try {
 			Instance = this;
 			ItemManager = new ItemManager();
 			ItemManager.registerItems();
