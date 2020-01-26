@@ -24,7 +24,7 @@ public final class IronSword extends Item {
 
 	@Override
 	public List<String> setLore() {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
