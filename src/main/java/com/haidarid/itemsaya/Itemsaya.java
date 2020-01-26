@@ -30,7 +30,7 @@ public class Itemsaya extends JavaPlugin {
 	@Override
 	public void onDisable() {
 	}
-
+	//getter class
 	public static Itemsaya getInstance() {
 		return Instance;
 	}
