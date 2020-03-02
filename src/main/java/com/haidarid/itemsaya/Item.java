@@ -25,12 +25,12 @@ public abstract class Item {
 	private boolean skill;
 	private final String name;
 	
-	public Item(Material material, 
-							int tingkatan,
-							String name,
-							String displayName,  
-							double damage,
-							boolean skill) 
+	public Item(	Material material, 
+			int tingkatan,
+			String name,
+			String displayName,  
+			double damage,
+			boolean skill) 
 	{
 		this.tingkatan = tingkatan;
 		this.displayname = ChatColor.RESET + displayName;
